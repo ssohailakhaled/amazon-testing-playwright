@@ -16,7 +16,6 @@ test('Amazon Login and Search Test', async ({ page }) => {
   };
 
   // Step 1: Login
-  console.log('Logging in...');
   await loginPage.navigateToLoginPage();
   await loginPage.login(testData.email, testData.password);
 

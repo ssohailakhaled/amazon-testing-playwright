@@ -13,7 +13,4 @@ export class LoginPage extends BasePage {
     await this.page.click('#signInSubmit');
   }
 
-  async isLoginSuccessful(): Promise<boolean> {
-    return await this.page.isVisible('#nav-link-accountList-nav-line-1');
-  }
 }
