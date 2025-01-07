@@ -11,7 +11,7 @@ test('Amazon Login and Search Test', async ({ page }) => {
 
   const testData = {
     email: 'Sohaila.khaled1489@gmail.com',
-    password: 'x',
+    password: 'Sohayla332000',
     searchQuery: 'mouse',
   };
 
@@ -30,12 +30,13 @@ test('Amazon Login and Search Test', async ({ page }) => {
   await expect(firstResultTitle).toContainText(/mouse/i);
 
   // Step 4: Add to Cart
-  await homePage.addFirstProductToCart();
+  await cartPage.addFirstProductToCart();
 
   // Step 5: Navigate to Cart
-  await homePage.navigateToCart();
+  await cartPage.navigateToCart();
 
   // Step 6: Proceed to Checkout
   await cartPage.proceedToCheckout();
+
   
 });
